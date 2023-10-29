@@ -3,7 +3,7 @@ import {
   TransitionGroup,
 } from 'react-transition-group';
 import PostItem from "./PostItem";
-const PostList = ({post, title, remove}) => {
+const PostList = ({post, remove}) => {
   if(post.length === 0){
     return <h1 style={{ textAlign: "center" }}> НЕТ ПОСТОВ </h1>
   }
