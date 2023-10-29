@@ -1,0 +1,14 @@
+.input{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+input:focus {
+    outline:none;
+    box-shadow: 0 0 0 3px rgb(116, 125, 253);
+    }

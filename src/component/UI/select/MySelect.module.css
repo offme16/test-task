@@ -1,0 +1,12 @@
+.select{
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: rgb(116, 125, 253);
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    border: none;
+}
+select:hover{
+    background-color: rgb(67, 79, 253);
+}
