@@ -8,10 +8,13 @@ const PostItem = (props) => {
           <strong>{props.post.id}.{props.post.title}</strong>
           <p>{props.post.body}</p>
         </div>
-        <div className="box__button">
-          <MyButton onClick={() => router(`/posts/${props.post.userId}`)}>Открыть</MyButton>
-          <MyButton onClick={() => props.remove(props.post)}>Удалить</MyButton>
-        </div>
+        {props.flag
+         ? <div></div>
+         : <div className="box__button">
+         <MyButton onClick={() => router(`/posts/${props.post.userId}`)}>Открыть</MyButton>
+         <MyButton onClick={() => props.remove(props.post)}>Удалить</MyButton>
+       </div>
+        } 
       </div>
     )
 }
