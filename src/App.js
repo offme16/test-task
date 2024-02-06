@@ -5,9 +5,10 @@ import { Header } from "./component/Header";
 import PostPage from "./pages/PostPage";
 
 function App() {
+  PUBLIC_URL = "https://offme16.github.io/test-task";
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes>
           <Route path="/about" element={<About />} />
